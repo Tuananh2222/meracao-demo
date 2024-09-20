@@ -1,12 +1,10 @@
 import Header from "@/Layout/Header/Header";
-import  { useEffect, useRef } from "react";
-
+import { useEffect, useRef } from "react";
 
 import digitalLife from "../../assets/img/digital-life.jpg";
 import avatar2 from "../../assets/img/avatar2.png";
 import Footer from "@/Layout/Footer/Footer";
 import { useNavigate } from "react-router-dom";
-
 
 function Home() {
   const h1Ref = useRef(null);
@@ -14,8 +12,8 @@ function Home() {
   const navigate = useNavigate();
 
   const handleChangePage = () => {
-    navigate("/product-detail")
-  }
+    navigate("/product-detail");
+  };
 
   useEffect(() => {
     const animeTitle = (element) => {
@@ -45,7 +43,12 @@ function Home() {
 
     // Cleanup observer on component unmount
     return () => {
-      hiddenRefs.current.forEach((el) => observer.unobserve(el));
+      hiddenRefs.current.forEach((el) => {
+        if (el) {
+          // Kiểm tra xem el có tồn tại không
+          observer.unobserve(el);
+        }
+      });
     };
   }, []);
 
@@ -201,10 +204,7 @@ function Home() {
         <h2 className="feed">Mera Library</h2>
 
         <div className="flex-div">
-          <div
-            className="card"
-            onClick={() => handleChangePage()}
-          >
+          <div className="card" onClick={() => handleChangePage()}>
             <img src={digitalLife} alt="desert photos 01" />
 
             <span>
@@ -323,7 +323,7 @@ function Home() {
             </span>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

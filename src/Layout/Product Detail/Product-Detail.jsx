@@ -26,7 +26,7 @@ function ProductDetail() {
     };
   }, []);
   return (
-    <>
+    <div ref={elementRef}>
       <Header />
       <div className="banner-product"></div>
       <div className="content-area-product">
@@ -244,7 +244,7 @@ function ProductDetail() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
