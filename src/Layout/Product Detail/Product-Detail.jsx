@@ -1,7 +1,30 @@
+import { useEffect, useRef } from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Product_detail.css";
 function ProductDetail() {
+  const elementRef = useRef(null);
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Do something when the element is in view
+        }
+      });
+    });
+
+    if (elementRef.current) {
+      observer.current.observe(elementRef.current);
+    }
+
+    return () => {
+      if (observer.current && elementRef.current) {
+        observer.current.unobserve(elementRef.current);  // Ensure element exists
+      }
+    };
+  }, []);
   return (
     <>
       <Header />
