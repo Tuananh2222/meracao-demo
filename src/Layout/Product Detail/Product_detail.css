@@ -1,0 +1,138 @@
+.banner-product {
+  background-image: url(../../assets/img/digital-life.jpg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-product-wrapper {
+  padding: 150px 300px;
+}
+
+.title-description {
+  font-size: 52px;
+  margin-bottom: 50px;
+}
+
+.list-description {
+  margin-bottom: 30px;
+}
+
+.list-description li {
+  font-size: 18px;
+}
+
+.button-solution {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  border: 1px solid #f8b74f;
+}
+
+.button-solution:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #eea61f;
+}
+
+.banner-product-2 {
+  background-image: url(https://static.wixstatic.com/media/nsplsh_9e3b553448f0406ab65a0803a8e9c005~mv2.jpg/v1/fill/w_1239,h_920,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_9e3b553448f0406ab65a0803a8e9c005~mv2.jpg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  min-height: 800px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.wrapper-text {
+  width: 60%;
+  height: 300px;
+  color: white;
+}
+
+.title-value {
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.banner-product-3 {
+  background-image: url(../../assets/img/feature-digital-life.png);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-area-product {
+  padding: 150px 300px;
+  background-color: #c28a30;
+  color: white;
+}
+
+.price-product-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-price {
+  font-size: 82px;
+}
+
+.list-feature li {
+  list-style: none;
+  text-align: center;
+}
+
+.info-author {
+  display: flex;
+  align-items: center;
+}
+
+.banner-product-4 {
+  background-image: url(../../assets/img/avatar2.png);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 40%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -15% center;
+}
+
+.description-author{
+  width: 60%;
+  box-sizing: border-box;
+}

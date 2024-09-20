@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.logo-wrapper {
+  display: flex;
+}
+.logo-img {
+  background-image: url("./assets/img/logo.png");
+  background-size: cover;
+  height: 36px;
+  width: 238px;
+  margin-left: 30px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 85px;
+  width: 65%;
+}
+.login-wrapper {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+.title-login {
+  margin-left: 15px;
+}
+#main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+#main-nav .main-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.main-nav-wrapper{
+  margin-bottom: 0 !important;
+}
+
+#main-nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 5px 20px;
+  transition: all 0.3s ease;
+}
+
+#main-nav a:hover {
+  background-color: #f8b74f;
+  border-radius: 25px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8b74f;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.banner {
+  background-image: url(https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.banner > h1 {
+  background-image: url(https://img.freepik.com/free-vector/groovy-colorful-background_23-2149074831.jpg?t=st=1726731757~exp=1726735357~hmac=4cbc7e0254d9e7df1fb16e427f5016bfa803cb7fd29e3db69b650efb819a2c50&w=1380);
+  font-size: 8.8em;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+}
+
+div.content-area {
+  width: 100%;
+  min-height: 100vh;
+}
+
+div.wrapper {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "content image";
+  height: auto;
+}
+
+div.content {
+  grid-area: "content";
+  margin: 40px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+div.content > h2 {
+  font-weight: bolder;
+}
+
+div.image-area {
+  grid-area: "image";
+}
+
+div.image-area > img {
+  width: 100%;
+  max-height: auto;
+  position: relative;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+div.flex-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+h2.feed {
+  text-align: center;
+  font-weight: bolder;
+  margin: 6%;
+  font-size: 4.6em;
+}
+
+div.card {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  margin: 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+div.card > img {
+  width: 100%;
+  max-height: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+div.card > span {
+  margin: 20px 40px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+div.card > .description {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translatex(-100%);
+  transition: 1s all;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translatex(0);
+  transition: 1s all;
+}
+
+footer.indesign-footer {
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+div.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+}
+
+div.id-letter,
+div.useful-links {
+  width: 50%;
+  height: auto;
+}
+
+div.id-letter > span {
+  font-size: 4.4em;
+  font-weight: bolder;
+  background-image: url(https://img.freepik.com/free-vector/hand-drawn-flat-groovy-psychedelic-background_23-2149074391.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+div.useful-links > ul {
+  list-style: none;
+}
+
+div.useful-links > ul > li > a {
+  text-decoration: none;
+  color: #242424;
+  cursor: pointer;
+}
+
+.link-other {
+  color: #eea61f;
+  text-decoration: none;
+}
+
+p a.link-other[href]:hover {
+  text-decoration: underline;
+  color: #eea61f;
+}
+
+p a.link-other:hover {
+  color: #eea61f;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: white;
+  color: #0d1117;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.footer-wrapper-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer li {
+  display: inline-block; /* Change to inline-block for horizontal layout */
+  padding: 0 10px;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 0;
+}
+.footer .footer-break {
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: black;
+}
+
+.text-icon{
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 756px) {
+  div.banner > h1 {
+    font-size: 4.6em;
+  }
+
+  div.wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.wraper-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
