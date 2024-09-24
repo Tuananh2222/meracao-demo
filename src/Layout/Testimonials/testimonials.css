@@ -1,0 +1,125 @@
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  height: fit-content;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  position: relative;
+  padding: 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.testimonial-quote::before,
+.testimonial-quote::after {
+  content: '“';
+  font-size: 2em;
+  color: #ccc;
+  position: absolute;
+}
+
+.testimonial-quote::before {
+  left: -10px;
+  top: -10px;
+}
+
+.testimonial-quote::after {
+  right: -10px;
+  bottom: -10px;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.testimonial-details h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial-details p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.swiper-slide {
+  opacity: 0.3; /* Đặt độ trong suốt cho các thẻ testimonial không được focus */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+}
+
+.swiper-slide-active {
+  opacity: 1; /* Thẻ testimonial chính sẽ có độ trong suốt 1 */
+  transform: scale(1.05); /* Tăng kích thước của thẻ testimonial chính */
+  z-index: 2;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(20px); /* Đẩy các thẻ testimonial xuống dưới một chút */
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.testimonial-details h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial-details p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+}
