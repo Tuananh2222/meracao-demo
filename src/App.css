@@ -463,7 +463,7 @@ div.info-product > .description {
 
 @media (max-width: 1515px) {
   .banner-wrapper{
-    height: 90vh;
+    height: 100vh;
   }
 
   .about-wrapper {
@@ -473,9 +473,6 @@ div.info-product > .description {
 }
 
 @media (max-width: 1473px) {
-  .banner-wrapper{
-    height: 100vh;
-  }
 
   .about-wrapper {
     padding: 30vh 0;
