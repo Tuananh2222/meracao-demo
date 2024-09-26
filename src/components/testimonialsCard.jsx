@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const TestimonialCard = ({ quote, name, title, image, onToggleExpand, isActive }) => {
   const [isExpanded, setIsExpanded] = useState(false);
