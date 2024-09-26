@@ -4,6 +4,27 @@ const TestimonialCard = ({ quote, name, title, image, onToggleExpand, isActive }
   const [isExpanded, setIsExpanded] = useState(false);
   const maxHeight = 550;
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1600) {
+        setMaxHeight(650);
+      } else {
+        setMaxHeight(550);
+      }
+    };
+
+    // Call initially to set maxHeight based on current screen size
+    handleResize();
+
+    // Listen for screen resizing
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  
   const toggleReadMore = (e) => {
     e.stopPropagation();
     setIsExpanded(!isExpanded);
