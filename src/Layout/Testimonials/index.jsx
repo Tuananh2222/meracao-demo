@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -72,6 +72,27 @@ const TestimonialSlider = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [containerHeight, setContainerHeight] = useState("850px");
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1600) {
+        setContainerHeight("940px");
+      } else {
+        setMaxHeight("850px");
+      }
+    };
+
+    // Call initially to set maxHeight based on current screen size
+    handleResize();
+
+    // Listen for screen resizing
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleSlideClick = (index) => {
     if (swiperInstance) {
