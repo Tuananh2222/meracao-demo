@@ -467,29 +467,9 @@ div.info-product > .description {
   }
 
   .about-wrapper {
-    padding-top: 30vh;
-    padding-bottom: 50vh;
-  }
-
-}
-
-@media (max-width: 1473px) {
-
-  .about-wrapper {
     padding: 30vh 0;
   }
 
-}
-
-
-@media (max-width: 768px) {
-  .about-wrapper {
-    padding-top: 5vh;
-  }
-
-  .product-wrapper {
-    padding-top: 5vh;
-  }
 }
 
 @keyframes moveText {
