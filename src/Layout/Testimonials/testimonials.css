@@ -145,7 +145,7 @@
 }
 
 
-@media (max-width: 1270px) {
+@media (max-width: 1600px) {
   .testimonial-card {
     max-height: 650px;
   }
