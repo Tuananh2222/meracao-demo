@@ -461,9 +461,20 @@ div.info-product > .description {
   background-color: black;
 }
 
-@media (max-width: 1473px) {
+@media (max-width: 1515px) {
   .banner-wrapper{
     height: 90vh;
+  }
+
+  .about-wrapper {
+    padding: 40vh 0;
+  }
+
+}
+
+@media (max-width: 1473px) {
+  .banner-wrapper{
+    height: 100vh;
   }
 
   .about-wrapper {
