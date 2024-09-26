@@ -7,7 +7,7 @@ const TestimonialCard = ({ quote, name, title, image, onToggleExpand, isActive }
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 1600) {
-        setMaxHeight(650);
+        setMaxHeight(680);
       } else {
         setMaxHeight(550);
       }
