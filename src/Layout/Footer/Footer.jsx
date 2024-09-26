@@ -1,7 +1,7 @@
 
 import { FaFacebook, FaInstagram, FaThreads, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
-import footer1 from "../../assets/img/2.png";
+import footer1 from "../../assets/img/3.png";
 
 function Footer() {
   return (

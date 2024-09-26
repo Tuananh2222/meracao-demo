@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -68,26 +69,49 @@ const TestimonialSlider = () => {
     },
   ];
 
+  const [swiperInstance, setSwiperInstance] = useState(null);
+  const [containerHeight, setContainerHeight] = useState("850px");
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideClick = (index) => {
+    if (swiperInstance) {
+      swiperInstance.slideToLoop(index);
+    }
+  };
+
+  const handleToggleExpand = (isExpanded) => {
+    setContainerHeight(isExpanded ? "1280px" : "850px");
+  };
+
   return (
-    <Swiper
-      slidesPerView={3}
-      spaceBetween={-30}
-      loop={true}
-      grabCursor={true}
-      centeredSlides={true}
-      initialSlide={1}
-    >
-      {testimonials.map((testimonial, index) => (
-        <SwiperSlide key={index}>
-          <TestimonialCard
-            quote={testimonial.quote}
-            name={testimonial.name}
-            title={testimonial.title}
-            image={testimonial.image}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="testimonials-container" style={{ height: containerHeight }}>
+      <h1>Feedback</h1>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        loop={true}
+        centeredSlides={true}
+        initialSlide={1}
+        autoHeight={true}
+        navigation
+        pagination={{ clickable: true }}
+        onSwiper={setSwiperInstance}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+      >
+        {testimonials.map((testimonial, index) => (
+          <SwiperSlide key={index} onClick={() => handleSlideClick(index)}>
+            <TestimonialCard
+              quote={testimonial.quote}
+              name={testimonial.name}
+              title={testimonial.title}
+              image={testimonial.image}
+              isActive={index === activeIndex}
+              onToggleExpand={handleToggleExpand}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
