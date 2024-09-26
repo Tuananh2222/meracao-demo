@@ -461,13 +461,14 @@ div.info-product > .description {
   background-color: black;
 }
 
-@media (max-width: 1520px) {
+@media (max-width: 1600px) {
   .banner-wrapper{
     height: 100vh;
   }
 
   .about-wrapper {
-    padding-bottom:50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 
 }
