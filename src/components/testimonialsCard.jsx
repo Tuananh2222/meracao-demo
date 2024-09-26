@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const TestimonialCard = ({ quote, name, title, image, onToggleExpand, isActive }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const maxHeight = 550;
+  const [maxHeight, setMaxHeight] = useState(550);
 
   useEffect(() => {
     const handleResize = () => {
