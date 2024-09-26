@@ -143,3 +143,10 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+
+@media (max-width: 1270px) {
+  .testimonial-card {
+    max-height: 650px;
+  }
+}
