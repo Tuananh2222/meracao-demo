@@ -218,7 +218,7 @@ main {
   place-items: center;
 }
 .experience-container h1 {
-  width: 66%;
+  width: 67%;
   margin: 0 auto;
   text-align: center;
 }
@@ -463,12 +463,12 @@ div.info-product > .description {
 
 @media (max-width: 1600px) {
   .banner-wrapper{
-    height: 100vh;
+    height: 90vh;
   }
 
   .about-wrapper {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 30vh;
+    padding-bottom: 50vh;
   }
 
 }
