@@ -100,47 +100,47 @@ function Home() {
             </div>
             <div className="content-box">
               <h1 className="section-title">Thông tin ngắn gọn</h1>
-              <p className="section-text">
-                <p>
+              <ul className="section-text">
+                <li>
                   Production Team Leader tại Cấy Nền Radio (420K+ Follower).
-                </p>
-                <p>Sáng tạo nội dung tại Mera Cao (120k+ Followers).</p>
-                <p>
+                </li>
+                <li>Sáng tạo nội dung tại Mera Cao (120k+ Followers).</li>
+                <li>
                   Hơn 9 năm kinh nghiệm vị trí Leader (Team Leader, Head of
                   Branch, Project Manager, General Manager).
-                </p>
-                <p>
+                </li>
+                <li>
                   Đại sứ truyền thông: Vietnam Young Lions 2023, Digital
                   Creatory 2023,…
-                </p>
-                <p>
+                </li>
+                <li>
                   Hơn 4 năm kinh nghiệm làm việc cùng GS. Phan Văn Trường - Cố
                   vấn Chính phủ Pháp về Thương mại Quốc tế.
-                </p>
-                <p>
+                </li>
+                <li>
                   Đạt học bổng toàn phần chương trình “Becoming a Solopreneur
                   Program 2024” bởi chị Linh Phan.
-                </p>
-                <p>
+                </li>
+                <li>
                   Đồng sáng lập dự án Cộng đồng Vũ trụ Creator hơn 17.000 thành
                   viên.
-                </p>
-                <p>
+                </li>
+                <li>
                   Speaker chia sẻ tại các dự án, CLB tại các trường Đại học như
                   FTU II, trường THPT Chuyên Lê Hồng Phong và Phổ Thông Năng
                   Khiếu - Đại học Quốc Gia TP HCM (The Bridge Project), ĐH Ngân
                   hàng TP HCM (Mầm sống), ĐH Mở TP HCM (YOUM), Trường Quốc tế -
                   Đại học Quốc gia Hà Nội (For Future),…
-                </p>
-                <p>
+                </li>
+                <li>
                   Mentor tại Dự án Cộng đồng Give It Back (Lead The Change),
                   Menteelogy (YBox), SYS,…
-                </p>
-                <p>
+                </li>
+                <li>
                   Top 15 sinh viên được chọn tham gia Cultural Exchange Program
                   giữa Vinh University và the University of South Florida (Mỹ).
-                </p>
-              </p>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="experience-container">
@@ -304,7 +304,7 @@ function Home() {
               <br /> Đăng ký để nhận Newsletter hàng tuần nhé!
             </h1>
             <button className="btn-register" onClick={handleSubmitRegister}>
-              <FaFolderOpen /> Đăng Ký
+              Đăng Ký
             </button>
           </div>
         </div>
