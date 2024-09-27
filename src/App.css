@@ -472,13 +472,6 @@ div.info-product > .description {
 
 }
 
-@media (max-width: 1270px) {
-  .banner-wrapper{
-    height: 80vh;
-  }
-
-}
-
 @keyframes moveText {
   0% {
     transform: translateY(-5px);
