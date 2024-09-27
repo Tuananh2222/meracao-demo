@@ -78,7 +78,7 @@ const TestimonialSlider = () => {
       if (window.innerWidth <= 1600) {
         setContainerHeight("940px");
       } else {
-        setMaxHeight("850px");
+        setContainerHeight("850px");
       }
     };
 
